@@ -2,7 +2,9 @@ name: Build & scan image
 on:
   pull_request:
     branches: [ "**" ]
-
+  workflow_dispatch:
+    branches: [ "**" ]
+    
 env:
   # Hostname of your registry
   REGISTRY: docker.io
